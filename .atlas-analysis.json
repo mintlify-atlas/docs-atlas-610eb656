@@ -1,0 +1,77 @@
+{
+  "projectType": "api-service",
+  "projectName": "Backend Práctica",
+  "projectDescription": "RESTful API service with JWT authentication, user management, and role-based access control built with Express and PostgreSQL",
+  "theme": "aspen",
+  "primaryColor": "#2563eb",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/authentication",
+              "concepts/authorization"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/database-setup",
+              "guides/environment-configuration",
+              "guides/user-management",
+              "guides/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/login",
+              "api/auth/logout"
+            ]
+          },
+          {
+            "group": "Users",
+            "pages": [
+              "api/users/create",
+              "api/users/list"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "JWT-based authentication with secure HTTP-only cookies",
+    "Role-based access control with admin and user roles",
+    "User registration and management with validation",
+    "PostgreSQL database with connection pooling",
+    "Password hashing with bcrypt",
+    "Request validation using Zod schemas",
+    "Structured logging with Pino"
+  ],
+  "publicApiSurface": [
+    "POST /login - Authenticate user and issue JWT token",
+    "POST /logout - Clear authentication cookie",
+    "POST /api/usuarios - Create new user (admin only)",
+    "GET /api/usuarios - List all users (authenticated)"
+  ]
+}
